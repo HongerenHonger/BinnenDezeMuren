@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Jouw Ervaring Delen</title>
+    <link rel="stylesheet" href="verdrietigmanaziaatbruinhaarstyle.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="nav">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="Images/arrow.png" class="arrow" alt="terug-arrow" />
+        </a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title">DEEL JE ERVARING!</h1>
+      </div>
+    </nav>
+
+    <main>
+      <section id="stapA">
+        <div class="naastelkaar">
+          <div class="poppetje">
+            <img src="Images/verdrietigmanaziaatbruinhaar.png" alt="vrolijkman1" />
+          </div>
+          <div class="emotietekst32">
+            <h1>Emotie:</h1>
+            <p id="emotietekstp32"></p>
+          </div>
+        </div>
+
+        <div class="emotie32">
+          <h1>Emotie:</h1>
+          <input
+            type="text"
+            id="emotieinput32"
+            name="emotie32"
+            placeholder="Welke emotie voelde je?"
+          />
+        </div>
+
+        <div class="ervaring32">
+          <h1>Ervaring:</h1>
+          <input
+            type="text"
+            id="ervaringinput32"
+            name="ervaring32"
+            placeholder="Beschrijf je ervaring hier.."
+          />
+        </div>
+
+        <div class="gobutton">
+          <a href="#" class="button" id="plaatsenButton">PLAATSEN</a>
+        </div>
+      </section>
+
+      <section id="stapB" style="display: none;">
+        <div class="naastelkaar">
+          <div class="poppetje">
+            <img src="Images/verdrietigmanaziaatbruinhaar.png" alt="vrolijkman1" />
+          </div>
+          <div class="emotietekst32">
+            <h1>Emotie:</h1>
+            <p id="toonEmotie32"></p>
+          </div>
+        </div>
+
+        <div class="ervaringtekst32">
+          <h1>Ervaring:</h1>
+          <p id="toonErvaring32"></p>
+        </div>
+
+        <div class="naam32">
+          <h1>Naam:</h1>
+          <input
+            type="text"
+            id="naaminput32"
+            name="emotie"
+            placeholder="Wat is je naam?"
+          />
+        </div>
+
+        <div class="reactie32">
+          <h1>Reactie:</h1>
+          <input
+            type="text"
+            id="reactieinput32"
+            name="ervaring"
+            placeholder="Geef een reactie hier.."
+          />
+        </div>
+
+        <div class="gotweebutton">
+          <a href="#" class="tweebutton" id="plaatsentweeButton">PLAATSEN</a>
+        </div>
+
+        <div id="reactieLijst32"></div>
+      </section>
+    </main>
+
+    <script type="module" src="verdrietigmanaziaatbruinhaarscript.js"></script>
+  </body>
+</html>
