@@ -1,0 +1,409 @@
+/* Algemene stijlen (toegepast op alle schermgroottes) */
+
+@font-face {
+  font-family: "Futuramediumitalic";
+  src: url(fonts/FuturaMediumItalicfont.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Futuramedium";
+  src: url(fonts/futuramediumbt.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Futuralightitalic";
+  src: url(fonts/FuturaLightItalicfont.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "GraphikBlack";
+  src: url(fonts/GraphikSemibold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "GoBoldT";
+  src: url(fonts/GoboldThin.otf) format("truetype");
+}
+
+html, body {
+  height: 102%;
+  min-height: 100%;
+}
+body {
+  min-height: 100vh;
+  background-image: url('Images/achtergrond2.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5b8028;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Futuralightitalic;
+  text-align: center;
+  font-size: 26px;
+}
+
+.nav-center {
+  flex: 1;
+  text-align: center;
+}
+
+.arrow {
+  color: white;
+  text-decoration: none;
+  width: 30%;
+  padding-left: 12%;
+  margin: 0;
+}
+
+.nav-title {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 26px;
+  text-align: center;
+}
+
+.nav-title-index {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.poppetje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding-top: 5%;
+}
+
+.poppetje img {
+  width: 65%;
+  height: auto;
+}
+
+.emotie, .ervaring {
+  margin-left: 9%;
+  color: white;
+  font-family: GraphikBlack;
+}
+
+.emotie input, .ervaring input {
+  width: 90%;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(91, 128, 40, 0.8);
+  color: white;
+}
+
+.emotie input {
+  height: 40px;
+}
+
+.ervaring input {
+  height: 100px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: rgb(218, 218, 218);
+  font-family: GoBoldT;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgba(66, 92, 29, 0.8); /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 3vw; /* Increase font size */
+  border-radius: 40px; /* Rounded corners */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  margin-top: 8%;
+  margin-left: 40%;
+  margin-bottom: 200px;
+  font-family: GraphikBlack;
+}
+
+.gobutton h3 a{
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: rgba(41, 58, 18, 0.8); /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.button:active {
+  background-color: rgba(46, 63, 21, 0.8); /* Even darker blue when clicked */
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+.naastelkaar {
+  display: flex;
+  justify-content: center;
+}
+
+.emotietekst {
+  display: none; 
+  padding-top: 100px;
+  padding-right: 5%;
+  color: white;
+  font-family: GraphikBlack;
+  margin: 0;
+}
+
+.emotietekst h1{
+  font-size: 22px;
+}
+
+.emotietekst p{
+  font-family: GoBoldT;
+  font-size: 40px;
+  margin: 0;
+}
+
+#ervaringenLijst {
+  margin: 5% 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ervaringtekst {
+  display: none; 
+  color: white;
+  background-color: rgba(91, 128, 40, 0.8);
+  font-size: 16px; /* Optional: Increase font size for better readability */
+  padding-top: 3%;
+  padding-bottom: 3%; /* Optional: Add padding for better spacing */
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  border-radius: 10px;
+  font-family: GraphikBlack;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.ervaringtekst:hover {
+  transform: scale(1.02);
+}
+
+.ervaringtekst h1 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #f0f0f0;
+}
+
+.ervaringtekst p {
+  margin: 0;
+  font-family: GoBoldT;
+  font-size: 18px;
+}
+
+.naam, .reactie {
+  margin-left: 9%;
+  color: white;
+  font-family: GraphikBlack;
+  display: none;;
+}
+
+.naam input, .reactie input {
+  width: 90%;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(73, 104, 30, 0.8);
+  color: white;
+}
+
+.naam input {
+  height: 40px;
+}
+
+.reactie input {
+  height: 100px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.tweebutton {
+  display: none;
+  background-color: rgba(66, 92, 29, 1); /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 3vw; /* Increase font size */
+  border-radius: 40px; /* Rounded corners */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  margin-top: 8%;
+  margin-left: 40%;
+  margin-bottom: 80px;
+  font-family: GraphikBlack;
+}
+
+.gotweebutton h3 a{
+  color: white;
+  text-decoration: none;
+}
+
+.tweebutton:hover {
+  background-color: rgba(41, 58, 18, 0.8); /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.tweebutton:active {
+  background-color: rgba(46, 63, 21, 0.8); /* Even darker blue when clicked */
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+#reactieLijst {
+  margin: 5% 7%;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  color: rgba(91, 128, 40, 1);
+  background-color: rgba(240, 240, 240, 0.8);
+  font-size: 16px; /* Optional: Increase font size for better readability */
+  padding-top: 3%;
+  padding-bottom: 3%; /* Optional: Add padding for better spacing */
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  font-family: GraphikBlack;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+#reactieLijst:hover {
+  transform: scale(1.02);
+}
+
+#reactieLijst h1 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: rgba(91, 128, 40, 1);
+  padding-top: 7px;
+}
+
+#reactieLijst p {
+  margin: 0;
+  font-family: GoBoldT;
+  font-size: 18px;
+  padding-bottom: 7px;
+}
+
+.image-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px; /* Optional: limits the width */
+  margin: 0 auto;   /* Optional: centers the grid */
+}
+
+.image-grid a img {
+  width: 60%; /* Makes images responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 20px ;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.array{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px; /* Optional: limits the width */
+  margin: 0 auto;   /* Optional: centers the grid */
+}
+
+.array a img {
+  width: 60%; /* Makes images responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 20px ;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.subbar {
+  width: 100%;
+  background-color: #628c27;
+  text-align: center;
+  padding: 10px 0;
+  font-family: FuturaMedium;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.subbar h2 {
+  margin: 0;
+  color: #e6e6e6;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) { /*jacco dit is voor kleine schermen zoals telefoons*/
+  .nav-title {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 5vw;
+    margin-left: 30%;
+  }
+
+  .tweebutton {
+    font-size: 5vw;
+    margin-left: 30%;
+  }
+
+  .poppetje {
+    width: 70%;
+  }
+
+  .poppetje img {
+    width: 70%;
+  }
+
+  .ervaringtekst h1 {
+    font-size: 22px;
+  }
+
+  .ervaringtekst p {
+    font-size: 19px;
+  }
+}

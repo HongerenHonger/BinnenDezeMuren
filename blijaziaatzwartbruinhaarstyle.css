@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "GraphikBlack";
+  src: url(fonts/GraphikSemibold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "GoBoldT";
+  src: url(fonts/GoboldThin.otf) format("truetype");
+}
+
+body {
+  background-image: url('Images/achtergrond2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  font-family: "GraphikBlack", sans-serif;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5b8028;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-left {
+  flex: 0  auto;
+}
+
+.arrow {
+  width: 30%;
+  padding-left: 12%;
+  margin: 0;
+}
+
+.nav-center {
+  flex: 1;
+}
+
+.nav-title,
+.nav-title-index {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 24px;
+}
+
+.nav-title-index {
+  font-size: 27px;
+  justify-content: center;
+}
+
+.poppetje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding-top: 5%;
+}
+
+.poppetje img {
+  width: 65%;
+  height: auto;
+}
+
+section {
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  max-width: 600px;
+
+}
+
+.naastelkaar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.naastelkaar .emotietekst h1,
+.naastelkaar .emotietekst p {
+  margin: 0;
+}
+
+.naastelkaar .emotietekst h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.naastelkaar .emotietekst p {
+  font-size: 1.8rem;
+  font-family: "GoBoldT", sans-serif;
+}
+
+.emotie h1,
+.ervaring h1,
+.ervaringtekst h1,
+.naam h1,
+.reactie h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#emotieinput,
+#ervaringinput {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(91, 128, 40, 0.8);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: "GoBoldT", sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+#emotieinput::placeholder,
+#ervaringinput::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+#emotieinput:focus,
+#ervaringinput:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 92, 29, 0.6);
+}
+
+#emotieinput {
+  height: 50px;
+}
+
+#ervaringinput {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.gobutton {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.gobutton .button {
+  display: inline-block;
+  background-color: rgba(66, 92, 29, 0.9);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "GraphikBlack", sans-serif;
+}
+
+.gobutton .button:hover {
+  background-color: rgba(41, 58, 18, 0.9);
+  transform: scale(1.05);
+}
+
+.gobutton .button:active {
+  background-color: rgba(46, 63, 21, 0.9);
+  transform: scale(0.95);
+}
+.ervaringtekst {
+  color: white;
+  background-color: rgba(91, 128, 40, 0.8);
+  font-family: "GoBoldT", sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-family: GraphikBlack;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.ervaringtekst1:hover {
+  transform: scale(1.02);
+}
+
+.ervaringtekst1 h1 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #f0f0f0;
+}
+
+.ervaringtekst1 p {
+  margin: 0;
+  font-family: GoBoldT;
+  font-size: 18px;
+}
+
+#naaminput,
+#reactieinput {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(73, 104, 30, 0.8);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: "GoBoldT", sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+#naaminput::placeholder,
+#reactieinput::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+#naaminput:focus,
+#reactieinput:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 92, 29, 0.6);
+}
+
+
+#naaminput {
+  height: 50px;
+}
+
+#reactieinput {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.gotweebutton {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.gotweebutton .tweebutton {
+  display: inline-block; /* zichtbaar zodra sectie B via JS getoond is */
+  background-color: rgba(66, 92, 29, 0.9);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "GraphikBlack", sans-serif;
+}
+
+.gotweebutton .tweebutton:hover {
+  background-color: rgba(41, 58, 18, 0.9);
+  transform: scale(1.05);
+}
+
+.gotweebutton .tweebutton:active {
+  background-color: rgba(46, 63, 21, 0.9);
+  transform: scale(0.95);
+}
+
+#reactieLijst {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#reactieLijst .reactietekst {
+  color: rgba(91, 128, 40, 1);
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#reactieLijst .reactietekst h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+#reactieLijst .reactietekst p {
+  margin: 0;
+  font-family: "GoBoldT", sans-serif;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #emotieinput,
+  #ervaringinput,
+  #naaminput,
+  #reactieinput {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .button,
+  .tweebutton {
+    font-size: 4vw;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .poppetje {
+    width: 70%;
+  }
+
+  .poppetje img {
+    width: 70%;
+  }
+}

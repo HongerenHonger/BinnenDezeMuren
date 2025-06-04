@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jouw Ervaring Delen</title>
+  <link rel="stylesheet" href="schaamvrouwblankbruinhaarstyle.css" />
+</head>
+<body>
+  <nav class="navbar" id="nav">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="Images/arrow.png" class="arrow" alt="terug-arrow" />
+      </a>
+    </div>
+    <div class="nav-center">
+      <h1 class="nav-title">DEEL JE ERVARING!</h1>
+    </div>
+  </nav>
+
+  <main>
+    <section id="stapA">
+      <div class="naastelkaar">
+        <div class="poppetje">
+          <img src="Images/schaamvrouwblankbruinhaar.png" alt="vrolijkman1" />
+        </div>
+        <div class="emotietekst22">
+          <h1>Emotie:</h1>
+          <p id="emotietekstp22"></p>
+        </div>
+      </div>
+
+      <div class="emotie22">
+        <h1>Emotie:</h1>
+        <input
+          type="text"
+          id="emotieinput22"
+          name="emotie22"
+          placeholder="Welke emotie voelde je?"
+        />
+      </div>
+
+      <div class="ervaring22">
+        <h1>Ervaring:</h1>
+        <input
+          type="text"
+          id="ervaringinput22"
+          name="ervaring22"
+          placeholder="Beschrijf je ervaring hier.."
+        />
+      </div>
+
+      <div class="gobutton">
+        <a href="#" class="button" id="plaatsenButton">PLAATSEN</a>
+      </div>
+    </section>
+
+    <section id="stapB" style="display: none;">
+      <div class="naastelkaar">
+        <div class="poppetje">
+          <img src="Images/schaamvrouwblankbruinhaar.png" alt="vrolijkman1" />
+        </div>
+        <div class="emotietekst22">
+          <h1>Emotie:</h1>
+          <p id="toonEmotie22"></p>
+        </div>
+      </div>
+
+      <div class="ervaringtekst22">
+        <h1>Ervaring:</h1>
+        <p id="toonErvaring22"></p>
+      </div>
+
+      <div class="naam22">
+        <h1>Naam:</h1>
+        <input
+          type="text"
+          id="naaminput22"
+          name="emotie"
+          placeholder="Wat is je naam?"
+        />
+      </div>
+
+      <div class="reactie22">
+        <h1>Reactie:</h1>
+        <input
+          type="text"
+          id="reactieinput22"
+          name="ervaring"
+          placeholder="Geef een reactie hier.."
+        />
+      </div>
+
+      <div class="gotweebutton">
+        <a href="#" class="tweebutton" id="plaatsentweeButton">PLAATSEN</a>
+      </div>
+
+      <div id="reactieLijst22"></div>
+    </section>
+  </main>
+
+  <script type="module" src="schaamvrouwblankbruinhaarscript.js"></script>
+</body>
+</html>
