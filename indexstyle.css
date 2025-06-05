@@ -378,7 +378,7 @@ body {
 
 @media (max-width: 768px) { /*jacco dit is voor kleine schermen zoals telefoons*/
   .nav-title {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .button {
