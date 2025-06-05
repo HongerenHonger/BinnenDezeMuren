@@ -119,7 +119,7 @@ async function laadEnToonErvaringEnReacties(ervaringId) {
       wrapper.appendChild(tekstEl);
       lijstContainer.appendChild(wrapper);
     });
-  } e
+  } 
 }
 
 
