@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const arrayDiv = document.querySelector(".array");
 
+
   const { data: ervaringRecord, error: errorFetch } = await supabase
     .from("ervaringen")
     .select("id, emotie, ervaring, htmlbestand")  // Added htmlbestand here
@@ -32,14 +33,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const vorigOpslag = ervaringRecord.arrayList;
   if (vorigOpslag) {
- 
     arrayDiv.innerHTML = vorigOpslag;
   }
 
   for (const ervaring of ervaringRecord) {
     if( !ervaring.htmlbestand ) continue;
     const a = document.createElement("a");
-    a.href = `${ervaring.htmlbestand}.html?id=${ervaring.id}`;
+    a.href = `input.html?htmlbestand=${ervaring.htmlbestand}&id=${ervaring.id}`;
     a.classList.add("ervaring-link");
 
     const img = document.createElement("img");
@@ -52,6 +52,5 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let opgeslagenHtml = localStorage.getItem("arrayHtml") || "";
     opgeslagenHtml += a.outerHTML;
-    localStorage.setItem("arrayHtml", opgeslagenHtml);
   }
 });

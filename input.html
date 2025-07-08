@@ -4,11 +4,13 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Jouw Ervaring Delen</title>
-  <link rel="stylesheet" href="verdrietigmanblankbruinhaarstyle.css" />
+
+  <link rel="stylesheet" href="input.css" />
 </head>
 <body>
   <nav class="navbar" id="nav">
     <div class="nav-left">
+   
       <a href="index.html">
         <img src="Images/arrow.png" class="arrow" alt="terug-arrow" />
       </a>
@@ -19,33 +21,38 @@
   </nav>
 
   <main>
+    <div id="disclaimer">
+      <h1>DISCLAIMER</h1>
+      <b>
+        De ervaring die je hier deelt kan worden gelezen door andere naasten. Deel dus alleen wat voor jou goed voelt. Niets moet, alles mag.
+      </b>
+      <p id="disclaimerClose">&#10005;</p>
+    </div>
     <section id="stapA">
       <div class="naastelkaar">
         <div class="poppetje">
-          <img src="Images/verdrietigmanblankbruinhaar.png" alt="vrolijkman1" />
+          <img id="stapA-image" />
         </div>
-        <div class="emotietekst33">
+        <div class="emotietekst">
           <h1>Emotie:</h1>
-          <p id="emotietekstp33"></p>
+          <p id="emotietekstp"></p>
         </div>
       </div>
 
-      <div class="emotie33">
+      <div class="emotie">
         <h1>Emotie:</h1>
         <input
           type="text"
-          id="emotieinput33"
-          name="emotie33"
+          id="emotieinput"
           placeholder="Welke emotie voelde je?"
         />
       </div>
 
-      <div class="ervaring33">
+      <div class="ervaring">
         <h1>Ervaring:</h1>
         <input
           type="text"
-          id="ervaringinput33"
-          name="ervaring33"
+          id="ervaringinput"
           placeholder="Beschrijf je ervaring hier.."
         />
       </div>
@@ -55,50 +62,52 @@
       </div>
     </section>
 
+    
     <section id="stapB" style="display: none;">
       <div class="naastelkaar">
         <div class="poppetje">
-          <img src="Images/verdrietigmanblankbruinhaar.png" alt="vrolijkman1" />
+          <img id="stapB-image" />
         </div>
-        <div class="emotietekst33">
+        <div class="emotietekst">
           <h1>Emotie:</h1>
-          <p id="toonEmotie33"></p>
+          <p id="toonEmotie"></p>
         </div>
       </div>
 
-      <div class="ervaringtekst33">
+      <div class="ervaringtekst">
         <h1>Ervaring:</h1>
-        <p id="toonErvaring33"></p>
+        <p id="toonErvaring"></p>
       </div>
 
-      <div class="naam33">
+      <div class="naam">
         <h1>Naam:</h1>
         <input
           type="text"
-          id="naaminput33"
-          name="emotie"
+          id="naaminput"
           placeholder="Wat is je naam?"
         />
       </div>
 
-      <div class="reactie33">
+      <div class="reactie">
         <h1>Reactie:</h1>
         <input
           type="text"
-          id="reactieinput33"
-          name="ervaring"
+          id="reactieinput"
           placeholder="Geef een reactie hier.."
         />
       </div>
 
+    
       <div class="gotweebutton">
         <a href="#" class="tweebutton" id="plaatsentweeButton">PLAATSEN</a>
       </div>
 
-      <div id="reactieLijst33"></div>
+
+      <div id="reactieLijst"></div>
     </section>
   </main>
 
-  <script type="module" src="verdrietigmanblankbruinhaarscript.js"></script>
+
+  <script type="module" src="input.js"></script>
 </body>
 </html>
